@@ -1,0 +1,124 @@
+#menu{
+    border-bottom: 15px solid green;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-areas: "menuNav menuNav menuNav" "menuName menuItems menuItems";
+}
+
+.menu-nav{
+    grid-area: menuNav;
+    height: 60px;
+    background-color: white;
+    z-index: 99;
+    padding: 0 100px;
+    border-bottom: 1px solid gray;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.menu-nav a:first-child{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.menu-nav a{
+    line-height: 60px;
+    color: black;
+    font-size: 14px;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+}
+
+.menu-name{
+    grid-area: menuName;
+    background-color: white;
+    padding: 80px 0 0 100px;
+    max-width: 300px;
+}
+
+.menu-name ul{
+    width: 140px;
+}
+
+.menu-name ul{
+    width: 140px;
+}
+
+.menu-name h3{
+    margin-top: 20px;
+    margin-bottom: 18px;
+    opacity: 0.8;
+}
+
+.menu-name a{
+    color: gray;
+}
+
+.menu-name a li{
+    padding: 10px 0;
+}
+
+.menu-items{
+    grid-area: menuItems;
+    background-color: white;
+    padding: 90px 200px 0 40px;
+}
+
+.menu-items a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu-items h1{
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.menu-items .items-head{
+    width: 100%;
+    padding: 25px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.order-menu-items{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    margin-bottom: 40px;
+}
+
+.order-items{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.order-items div{
+    background-color: green;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.order-items div img{
+    width: 100%;
+    height: 100%;
+}
+
+.order-items span{
+    font-weight: 500;
+    font-size: 20px;
+}
+
